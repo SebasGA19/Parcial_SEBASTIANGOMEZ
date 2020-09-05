@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Parcial_SebastianGomez"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow"  Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
+        <Label Content="OnlyPans" HorizontalAlignment="Center" VerticalAlignment="Top" Height="61" Width="140" FontSize="30" FontWeight="Bold"/>
+        <Frame  Name="frameMain" NavigationUIVisibility="Hidden" Margin="0,61,0,10"/>
 
     </Grid>
 </Window>

@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,18 +14,17 @@ using System.Windows.Shapes;
 namespace Parcial_SebastianGomez
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Empleado.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Empleado : Page
     {
-        public MainWindow()
+        public Empleado()
         {
             InitializeComponent();
-        }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            frameMain.NavigationService.Navigate(new Login());
+            cboxPanes.Items.Add("Aliñado");
+            cboxPanes.Items.Add("No aliñado");
+            cboxPanes.Items.Add("Especial");
         }
     }
 }
