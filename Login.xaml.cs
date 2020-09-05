@@ -22,5 +22,26 @@ namespace Parcial_SebastianGomez
         {
             InitializeComponent();
         }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            if(txtUsuario.Text == "admin" && txtContraseña.Password == "1234")
+            {
+                MainWindow w = (MainWindow)Window.GetWindow(this);
+                w.frameMain.NavigationService.Navigate(new Admin());
+            }
+            
+            else if(txtUsuario.Text == "empleado" && txtContraseña.Password == "1234")
+            {
+                MainWindow w = (MainWindow)Window.GetWindow(this);
+                w.frameMain.NavigationService.Navigate(new Empleado());
+            }
+
+            else
+            {
+                MessageBox.Show("Credenciales Invalidas");
+            }
+        
+        }
     }
 }

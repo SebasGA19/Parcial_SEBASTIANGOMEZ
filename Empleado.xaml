@@ -11,18 +11,19 @@
     <Grid Background="#FFA7DFF0">
         <ComboBox Name="cboxPanes" HorizontalAlignment="Left" Margin="13,75,0,0" VerticalAlignment="Top" Width="159" Height="35"/>
         <Slider Name="sldPanes" TickFrequency="1" IsSnapToTickEnabled="True" Maximum="10" TickPlacement="BottomRight" HorizontalAlignment="Left" Margin="186,78,0,0" VerticalAlignment="Top" Width="141" Height="29"/>
-        <Button Name="btnPanes" Content="Agregar" HorizontalAlignment="Left" Margin="52,124,0,0" VerticalAlignment="Top" Height="39" Width="82" FontWeight="Bold" FontSize="16"/>
-        <ListBox Name="lboxPanes" Margin="14,236,618,36"/>
-        <Button Name="btnVender" Content="VENDER" HorizontalAlignment="Left" Margin="172,350,0,0" VerticalAlignment="Top" Height="64" Width="123" FontWeight="Bold" FontSize="16"/>
-        <Label Content="Nombre" HorizontalAlignment="Left" Margin="204,236,0,0" VerticalAlignment="Top" Width="61"/>
-        <Label Content="Cedula" HorizontalAlignment="Left" Margin="211,290,0,0" VerticalAlignment="Top"/>
-        <TextBox Name="txtNombre" HorizontalAlignment="Left" Margin="172,267,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="123"/>
-        <TextBox Name="txtCedula" HorizontalAlignment="Left" Margin="172,325,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="123"/>
-        <TextBlock HorizontalAlignment="Left" Margin="421,131,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="245" Width="297"/>
-        <Label Content="Productos vendidos:" HorizontalAlignment="Left" Margin="421,79,0,0" VerticalAlignment="Top" FontSize="30" FontWeight="Bold"/>
+        <Button Name="btnPanes" Content="Agregar" HorizontalAlignment="Left" Margin="52,124,0,0" VerticalAlignment="Top" Height="39" Width="82" FontWeight="Bold" FontSize="16" Click="btnPanes_Click"/>
+        <ListBox Name="lboxPanes" Margin="14,192,618,80"/>
+        <Button Name="btnVender" Content="VENDER" HorizontalAlignment="Left" Margin="172,306,0,0" VerticalAlignment="Top" Height="64" Width="123" FontWeight="Bold" FontSize="16" Click="btnVender_Click"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="204,192,0,0" VerticalAlignment="Top" Width="61" FontWeight="Bold"/>
+        <Label Content="Cedula" HorizontalAlignment="Left" Margin="211,246,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox Name="txtNombre" HorizontalAlignment="Left" Margin="172,223,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="123"/>
+        <TextBox Name="txtCedula" HorizontalAlignment="Left" Margin="172,281,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="123"/>
+        <TextBlock Name="blkProductos" HorizontalAlignment="Left" Margin="421,131,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="245" Width="297"/>
+        <Label Content="Productos vendidos:" HorizontalAlignment="Left" Margin="421,47,0,0" VerticalAlignment="Top" FontSize="30" FontWeight="Bold"/>
         <Label Content="Cantidad de panes" HorizontalAlignment="Left" Margin="200,47,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Tipo de pan" HorizontalAlignment="Left" Margin="54,47,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Precio/Cantidad" HorizontalAlignment="Left" Margin="42,0,0,0" VerticalAlignment="Center" FontWeight="Bold"/>
+        <Label Content="Tipo de pan" HorizontalAlignment="Left" Margin="52,47,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Producto/Precio/Cantidad" HorizontalAlignment="Left" Margin="14,168,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Producto/Precio/Cantidad/Nombre/Cedula/Hora" HorizontalAlignment="Left" Margin="431,105,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
 
     </Grid>
 </Page>
