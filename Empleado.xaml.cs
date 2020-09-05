@@ -72,6 +72,7 @@ namespace Parcial_SebastianGomez
                 string comprador = txtNombre.Text;
                 string cedula = txtCedula.Text;
                 blkProductos.Text += string.Format("{0} | {1} | {2} | {3}", itemBox, comprador, cedula, hora) +"\n";
+                lboxPanes.Items.Remove(lboxPanes.SelectedItem);
             }
         }
     }
